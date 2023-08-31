@@ -62,7 +62,7 @@ public class PodcastEpisode extends Audio {
         return this.month;
     }
 
-    public setMonth(int month) {
+    public void setMonth(int month) {
         this.month = month;
     }
 

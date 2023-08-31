@@ -5,7 +5,7 @@ public class SongTrack extends Audio {
     private String album;
     private String composer;
     private String genre;
-    prinvate int year;
+    private int year;
 
     private String getArtist() {
         return this.artist;
