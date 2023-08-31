@@ -9,7 +9,7 @@ public class Audio {
 
     public void playAudio() {
         this.timesPlayed++;
-        // TODO: implement logic for actually playing the audio.
+        /* TODO: implement logic for actually playing the audio. */
     }
 
     public void likeAudio() {
@@ -46,5 +46,12 @@ public class Audio {
 
     public int getTimesDisliked() {
         return this.timesDisliked;
+    }
+
+    public float getRating() {
+        float scalingFactor 
+            = (float) this.timesLiked / (this.timesLiked + this.timesDisliked);
+        int rating = (int) (scalingFactor * this.timesPlayed);
+        return rating;
     }
 }

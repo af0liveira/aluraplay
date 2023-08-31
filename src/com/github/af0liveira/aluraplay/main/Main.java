@@ -1,5 +1,6 @@
 package com.github.af0liveira.aluraplay.main;
 
+import com.github.af0liveira.aluraplay.modelos.PlayList;
 import com.github.af0liveira.aluraplay.modelos.PodcastEpisode;
 import com.github.af0liveira.aluraplay.modelos.SongTrack;
 
@@ -17,7 +18,7 @@ public class Main {
         mySongTrack.setGenre("Alternative");
 
         System.out.println("mySongTrack: " + mySongTrack);
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= 1500; i++) {
             mySongTrack.playAudio();
             if (i % 3 == 0) {
                 mySongTrack.likeAudio();
@@ -29,6 +30,7 @@ public class Main {
         System.out.println("Times mySongTrack was played:   " + mySongTrack.getTimesPlayed());
         System.out.println("Times mySongTrack was liked:    " + mySongTrack.getTimesLiked());
         System.out.println("Times mySongTrack was disliked: " + mySongTrack.getTimesDisliked());
+        System.out.println("Rating of mySongTrack :         " + mySongTrack.getRating());
 
         PodcastEpisode myPodcastEpisode = new PodcastEpisode();
         myPodcastEpisode.setTitle("Na jugular");
@@ -51,7 +53,7 @@ public class Main {
         myPodcastEpisode.setCreator("Trovão Mídia e Revista Piauí");
 
         System.out.println("myPodcastEpisode: " + myPodcastEpisode);
-        for (int i = 1; i <= 50; i++) {
+        for (int i = 1; i <= 500; i++) {
             myPodcastEpisode.playAudio();
             if (i % 2 == 0) {
                 myPodcastEpisode.likeAudio();
@@ -63,6 +65,11 @@ public class Main {
         System.out.println("Times myPodcastEpisode was played:   " + myPodcastEpisode.getTimesPlayed());
         System.out.println("Times myPodcastEpisode was liked:    " + myPodcastEpisode.getTimesLiked());
         System.out.println("Times myPodcastEpisode was disliked: " + myPodcastEpisode.getTimesDisliked());
+        System.out.println("Rating of myPodcastEpisode :         " + myPodcastEpisode.getRating());
+
+        PlayList myPlayList = new PlayList();
+        myPlayList.include(mySongTrack);
+        myPlayList.include(myPodcastEpisode);
 
     }
 
