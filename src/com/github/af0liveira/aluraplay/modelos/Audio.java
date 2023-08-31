@@ -48,7 +48,7 @@ public class Audio {
         return this.timesDisliked;
     }
 
-    public float getRating() {
+    public int getRating() {
         float scalingFactor 
             = (float) this.timesLiked / (this.timesLiked + this.timesDisliked);
         int rating = (int) (scalingFactor * this.timesPlayed);
