@@ -22,7 +22,7 @@ public class PodcastEpisode extends Audio {
         return this.showTitle;
     }
 
-    public void getShowTitle(String showTitle) {
+    public void setShowTitle(String showTitle) {
         this.showTitle = showTitle;
     }
 
