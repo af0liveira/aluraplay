@@ -7,34 +7,34 @@ public class SongTrack extends Audio {
     private String genre;
     private int year;
 
-    private String getArtist() {
+    public String getArtist() {
         return this.artist;
     }
 
-    private void setArtist(String artist) {
+    public void setArtist(String artist) {
         this.artist = artist;
     }
 
-    private String getAlbum() {
+    public String getAlbum() {
         return this.album;
     }
 
-    private void setAlbum(String album) {
+    public void setAlbum(String album) {
         this.album = album;
     }
 
-    private String getComposer() {
+    public String getComposer() {
         return this.composer;
     }
 
-    private void setComposer(String composer) {
+    public void setComposer(String composer) {
         this.composer = composer;
     }
 
-    private String getGenre() {
+    public String getGenre() {
         return this.genre;
     }
-    private void setGenre(String genre) {
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 
